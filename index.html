@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Week 2 Assignment</title>
+        <meta name="description" content="Glossary">
+        <meta name="keywords" content="book club, genre, fiction, non-fiction">        <title>Week 2 Assignment</title>
     </head>
-    <body>
+    <header>
+        <h1>Our Book Club</h1>
+        <nav>
+            <a href="#Glossary">Glossary</a> |
+            <a href="#Audio Introduction">Audio Introduction</a> |
+            <a href="#Reading Lists">Reading Lists</a> |
+            <a href="#Subscription form section">Subscription Form Section</a>
+        </nav>
+    </header>
+
+    <section id="Glossary">
         <h1>Glossary</h1>
         <dl>
             <dt>Theme</dt>
@@ -11,13 +22,18 @@
             <dt>Protagonist</dt>
             <dd>The main character in a story who always faces a conflict and has to make a choice</dd>
         </dl>
-        <br><br>
+    </section>
+     <br><br>
         <!--Audio Introduction-->
+    <section id="Audio Introduction">
+        <h1>Audio Introduction</h1>
             <audio controls autoplay>
                 <source src="Books_audio.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
-            <br>
+    </section>
+    <br>
+    <section id="Reading Lists">
         <h2>Book Types</h2>
         <ul>
             <li>fiction</li>
@@ -64,8 +80,9 @@
                 </tr>
             </tbody>
         </table>
+    </section>
         <br>
-        <!--Image of book club community-->
+        <!--Image of book community-->
         <img src="BC_Banner.jpg" alt="Book club community banner" width="500" height="600">
         <br>
         <!--Subscription form section-->
@@ -107,6 +124,5 @@
             <br>
             <input type="submit" value="Submit">
             </form>
-        </section>
-    <body>
+    </section>
 </html>
