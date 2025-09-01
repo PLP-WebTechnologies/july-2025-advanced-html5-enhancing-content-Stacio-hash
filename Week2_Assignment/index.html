@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Week 2 Assignment</title>
+    </head>
+    <body>
+        <h1>Glossary</h1>
+        <dl>
+            <dt>Theme</dt>
+            <dd>The central message in a literary work</dd>
+            <dt>Protagonist</dt>
+            <dd>The main character in a story who always faces a conflict and has to make a choice</dd>
+        </dl>
+        <br><br>
+        <!--Audio Introduction-->
+            <audio controls autoplay>
+                <source src="Books_audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <br>
+        <h2>Book Types</h2>
+        <ul>
+            <li>fiction</li>
+            <ol type="i">
+                <li>Science fiction</li>
+                <li>Historical fiction</li>
+                <li>Fantasy</li>
+            </ol>
+            <li>non-fiction</li>
+            <ol type="i">
+                <li>Biography</li>
+                <li>Self-help</li>
+                <li>Essay</li>
+        </ul>
+        <h2>Reading Lists Per Book Type</h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Book Type</th>
+                    <th>Book Title</th>
+                    <th>Author</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fiction</td>
+                    <td>Nothing Lasts Forever</td>
+                    <td>Sidney Sheldon</td>
+                </tr>
+                <tr>
+                    <td>Fiction</td>
+                    <td>The Alchemist</td>
+                    <td>Paulo Coelho</td>
+                </tr>
+                <tr>
+                    <td>Non-Fiction</td>
+                    <td>The Power of Habit</td>
+                    <td>Charles Duhigg</td>
+                </tr>
+                <tr>
+                    <td>Non-Fiction</td>
+                    <td>Finding Me</td>
+                    <td>Viola Davis</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <!--Image of book club community-->
+        <img src="BC_Banner.jpg" alt="Book club community banner" width="500" height="600">
+        <br>
+        <!--Subscription form section-->
+        <section class="subscription-form">
+            <h3>Subscribe below to become part of our book club</h3>
+            <form action="/submit_form" method="post">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name here" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email here" required><br><br>
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" pattern="+254 [0-9]{3} [0-9]{3} [0-9{3}]" minlength="10" placeholder="+254" required><br><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Reading Preferences</legend>
+                <label for="booktype">Preferred Book Type:</label>
+                <select id="booktype" name="booktype">
+                    <option value="fiction">Fiction</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                </select>
+                <br><br>
+                <label for="genre">Preferred Genre:</label>
+                <select id="genre" name="genre">
+                    <option value="science-fiction">Science Fiction</option>
+                    <option value="biography">Biography</option>
+                    <option value="self-help">Self-Help</option>
+                </select>
+                <label for="preferred authors">Preferred Authors</label>
+                <select id="preferred authors" name="preferred authors">
+                    <option value="African authors">African Authors</option>
+                    <option value="Western Authors">Western Authors</option>
+                    <option value="Spiritual Authors">Spiritual Authors</option>
+                </select>
+                <br><br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit">
+            </form>
+        </section>
+    <body>
+</html>
